@@ -52,10 +52,10 @@ http://<hostname>:<port>/tuya/switchdevices
 
 Output example
 
-```json
+```json5
 {
   "success": true,
   "message": "OK",
-  "status": true //powered on after the api call
+  "status": true  //powered on after the api call
 }
 ```
