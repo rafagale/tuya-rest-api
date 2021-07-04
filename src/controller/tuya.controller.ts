@@ -22,7 +22,7 @@ tuyaController.get("/switchdevices", async (req: Request, res: Response) => {
             {
                 "success": true,
                 "message": "OK",
-                "status": status
+                "status": !status
             }
         );
     } catch (e) {
