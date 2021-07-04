@@ -45,7 +45,7 @@ export const switchStatus = async (devices: Array<string>): Promise<null | boole
 
 function getSwitchStatus(lamp: Device) {
     for (let element of lamp.status) {
-        if (element.code === 'switch_led') {
+        if (process.env.SWITCH_COMMAND === element.code) {
             return element.value;
         }
     }

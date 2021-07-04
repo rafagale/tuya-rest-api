@@ -9,7 +9,7 @@ API endpoint that behaves like a switch for a single device or multiple devices 
 
 It uses the official nodejs connector by Tuya which supports the new Signature algorithm implemented on June 30, 2021 on Tuya IoT Platform.
 
-Useful to use with NFC tags and/or to enhace automation tasks with other frameworks. Eg: Write the endpoint to a NFC tag to turn on/off all the lights in the same room
+Useful to use with NFC tags and/or to enhace automation tasks with other frameworks. Eg: Write the endpoint call to a NFC tag to turn on/off all the lights in the same room/group.
 
 
 ## Installation
@@ -50,12 +50,20 @@ $ npm start
 http://<hostname>:<port>/tuya/switchdevices
 ```
 
-Output example
+Output examples
 
 ```json5
 {
   "success": true,
   "message": "OK",
   "status": true  //powered on after the api call
+}
+```
+
+```json5
+{
+  "success": true,
+  "message": "OK",
+  "status": false  //powered off after the api call
 }
 ```
